@@ -10,10 +10,7 @@ public class FirstController {
     @GetMapping("/greeting")
     public String greeting(@RequestParam(name="name", required=false, defaultValue="World") String name, Model model) {
         model.addAttribute("name", name);
-<<<<<<< HEAD
-=======
 		//文件修改
->>>>>>> origin/branch2
         return "greeting";
     }
 
